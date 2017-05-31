@@ -50,7 +50,7 @@ public final class CrimeDistrict {
 
         // create a dataset based on the csv file based only on the 6th column containing the district ID
         DataSet<Tuple1<String>> rawdata = env.readCsvFile(filename)
-                .includeFields("000001")
+                .includeFields("001")
                 .ignoreFirstLine()
                 .parseQuotedStrings('"')
                 .types(String.class);
